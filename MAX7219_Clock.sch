@@ -1,0 +1,2157 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B286
+P 1600 1450
+AR Path="/5E00F069/5E83B286" Ref="U?"  Part="1" 
+AR Path="/5E83B286" Ref="U1"  Part="1" 
+F 0 "U1" H 1600 2100 50  0000 C CNN
+F 1 "MAX7219_7221" H 1600 200 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 1600 200 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B28C
+P 2500 1750
+AR Path="/5E00F069/5E83B28C" Ref="LED?"  Part="1" 
+AR Path="/5E83B28C" Ref="LED1"  Part="1" 
+F 0 "LED1" H 2500 2700 50  0000 C CNN
+F 1 "7088A_788" H 2500 800 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 2500 700 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 2600 2150 50  0001 C CNN
+	1    2500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B292
+P 950 2250
+AR Path="/5E00F069/5E83B292" Ref="C?"  Part="1" 
+AR Path="/5E83B292" Ref="C1"  Part="1" 
+F 0 "C1" H 1065 2296 50  0000 L CNN
+F 1 "0.1u" H 1065 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 988 2100 50  0001 C CNN
+F 3 "~" H 950 2250 50  0001 C CNN
+	1    950  2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B298
+P 950 1800
+AR Path="/5E00F069/5E83B298" Ref="R?"  Part="1" 
+AR Path="/5E83B298" Ref="R1"  Part="1" 
+F 0 "R1" H 1020 1846 50  0000 L CNN
+F 1 "30k" H 1020 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 880 1800 50  0001 C CNN
+F 3 "~" H 950 1800 50  0001 C CNN
+	1    950  1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 950  2200 950 
+Wire Wire Line
+	2150 1050 2200 1050
+Wire Wire Line
+	2150 1150 2200 1150
+Wire Wire Line
+	2150 1250 2200 1250
+Wire Wire Line
+	2150 1350 2200 1350
+Wire Wire Line
+	2150 1450 2200 1450
+Wire Wire Line
+	2150 1550 2200 1550
+Wire Wire Line
+	2150 1650 2200 1650
+Wire Wire Line
+	2150 1850 2200 1850
+Wire Wire Line
+	2150 1950 2200 1950
+Wire Wire Line
+	2150 2050 2200 2050
+Wire Wire Line
+	2150 2150 2200 2150
+Wire Wire Line
+	2150 2250 2200 2250
+Wire Wire Line
+	2150 2350 2200 2350
+Wire Wire Line
+	2150 2450 2200 2450
+Wire Wire Line
+	2150 2550 2200 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B2AE
+P 950 2600
+AR Path="/5E00F069/5E83B2AE" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B2AE" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 950 2350 50  0001 C CNN
+F 1 "GND" H 955 2427 50  0000 C CNN
+F 2 "" H 950 2600 50  0001 C CNN
+F 3 "" H 950 2600 50  0001 C CNN
+	1    950  2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B2B4
+P 800 2000
+AR Path="/5E00F069/5E83B2B4" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B2B4" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 800 1850 50  0001 C CNN
+F 1 "+5V" H 815 2173 50  0000 C CNN
+F 2 "" H 800 2000 50  0001 C CNN
+F 3 "" H 800 2000 50  0001 C CNN
+	1    800  2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  2400 950  2450
+Wire Wire Line
+	950  2550 1050 2550
+Connection ~ 950  2550
+Wire Wire Line
+	950  2550 950  2600
+Wire Wire Line
+	1050 2450 950  2450
+Connection ~ 950  2450
+Wire Wire Line
+	950  2450 950  2550
+Wire Wire Line
+	950  2100 950  2050
+Wire Wire Line
+	950  2050 1050 2050
+Connection ~ 950  2050
+Wire Wire Line
+	800  2000 800  2050
+Wire Wire Line
+	800  2050 950  2050
+Wire Wire Line
+	1050 1550 950  1550
+Wire Wire Line
+	950  1550 950  1650
+Wire Wire Line
+	950  1950 950  2050
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B2C9
+P 1600 3950
+AR Path="/5E00F069/5E83B2C9" Ref="U?"  Part="1" 
+AR Path="/5E83B2C9" Ref="U6"  Part="1" 
+F 0 "U6" H 1600 4600 50  0000 C CNN
+F 1 "MAX7219_7221" H 1600 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 1600 2700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 1600 3950 50  0001 C CNN
+	1    1600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B2CF
+P 2500 4250
+AR Path="/5E00F069/5E83B2CF" Ref="LED?"  Part="1" 
+AR Path="/5E83B2CF" Ref="LED6"  Part="1" 
+F 0 "LED6" H 2500 5200 50  0000 C CNN
+F 1 "7088A_788" H 2500 3300 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 2500 3200 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 2600 4650 50  0001 C CNN
+	1    2500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B2D5
+P 950 4750
+AR Path="/5E00F069/5E83B2D5" Ref="C?"  Part="1" 
+AR Path="/5E83B2D5" Ref="C6"  Part="1" 
+F 0 "C6" H 1065 4796 50  0000 L CNN
+F 1 "0.1u" H 1065 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 988 4600 50  0001 C CNN
+F 3 "~" H 950 4750 50  0001 C CNN
+	1    950  4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B2DB
+P 950 4300
+AR Path="/5E00F069/5E83B2DB" Ref="R?"  Part="1" 
+AR Path="/5E83B2DB" Ref="R6"  Part="1" 
+F 0 "R6" H 1020 4346 50  0000 L CNN
+F 1 "30k" H 1020 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 880 4300 50  0001 C CNN
+F 3 "~" H 950 4300 50  0001 C CNN
+	1    950  4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3450 2200 3450
+Wire Wire Line
+	2150 3550 2200 3550
+Wire Wire Line
+	2150 3650 2200 3650
+Wire Wire Line
+	2150 3750 2200 3750
+Wire Wire Line
+	2150 3850 2200 3850
+Wire Wire Line
+	2150 3950 2200 3950
+Wire Wire Line
+	2150 4050 2200 4050
+Wire Wire Line
+	2150 4150 2200 4150
+Wire Wire Line
+	2150 4350 2200 4350
+Wire Wire Line
+	2150 4450 2200 4450
+Wire Wire Line
+	2150 4550 2200 4550
+Wire Wire Line
+	2150 4650 2200 4650
+Wire Wire Line
+	2150 4750 2200 4750
+Wire Wire Line
+	2150 4850 2200 4850
+Wire Wire Line
+	2150 4950 2200 4950
+Wire Wire Line
+	2150 5050 2200 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B2F1
+P 950 5100
+AR Path="/5E00F069/5E83B2F1" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B2F1" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 950 4850 50  0001 C CNN
+F 1 "GND" H 955 4927 50  0000 C CNN
+F 2 "" H 950 5100 50  0001 C CNN
+F 3 "" H 950 5100 50  0001 C CNN
+	1    950  5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B2F7
+P 800 4500
+AR Path="/5E00F069/5E83B2F7" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B2F7" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 800 4350 50  0001 C CNN
+F 1 "+5V" H 815 4673 50  0000 C CNN
+F 2 "" H 800 4500 50  0001 C CNN
+F 3 "" H 800 4500 50  0001 C CNN
+	1    800  4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4900 950  4950
+Wire Wire Line
+	950  5050 1050 5050
+Connection ~ 950  5050
+Wire Wire Line
+	950  5050 950  5100
+Wire Wire Line
+	1050 4950 950  4950
+Connection ~ 950  4950
+Wire Wire Line
+	950  4950 950  5050
+Wire Wire Line
+	950  4600 950  4550
+Wire Wire Line
+	950  4550 1050 4550
+Connection ~ 950  4550
+Wire Wire Line
+	800  4500 800  4550
+Wire Wire Line
+	800  4550 950  4550
+Wire Wire Line
+	1050 4050 950  4050
+Wire Wire Line
+	950  4050 950  4150
+Wire Wire Line
+	950  4450 950  4550
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B30C
+P 3600 1450
+AR Path="/5E00F069/5E83B30C" Ref="U?"  Part="1" 
+AR Path="/5E83B30C" Ref="U2"  Part="1" 
+F 0 "U2" H 3600 2100 50  0000 C CNN
+F 1 "MAX7219_7221" H 3600 200 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 3600 200 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 3600 1450 50  0001 C CNN
+	1    3600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B312
+P 4500 1750
+AR Path="/5E00F069/5E83B312" Ref="LED?"  Part="1" 
+AR Path="/5E83B312" Ref="LED2"  Part="1" 
+F 0 "LED2" H 4500 2700 50  0000 C CNN
+F 1 "7088A_788" H 4500 800 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 4500 700 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 4600 2150 50  0001 C CNN
+	1    4500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B318
+P 2950 2250
+AR Path="/5E00F069/5E83B318" Ref="C?"  Part="1" 
+AR Path="/5E83B318" Ref="C2"  Part="1" 
+F 0 "C2" H 3065 2296 50  0000 L CNN
+F 1 "0.1u" H 3065 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2988 2100 50  0001 C CNN
+F 3 "~" H 2950 2250 50  0001 C CNN
+	1    2950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B31E
+P 2950 1800
+AR Path="/5E00F069/5E83B31E" Ref="R?"  Part="1" 
+AR Path="/5E83B31E" Ref="R2"  Part="1" 
+F 0 "R2" H 3020 1846 50  0000 L CNN
+F 1 "30k" H 3020 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2880 1800 50  0001 C CNN
+F 3 "~" H 2950 1800 50  0001 C CNN
+	1    2950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 950  4200 950 
+Wire Wire Line
+	4150 1050 4200 1050
+Wire Wire Line
+	4150 1150 4200 1150
+Wire Wire Line
+	4150 1250 4200 1250
+Wire Wire Line
+	4150 1350 4200 1350
+Wire Wire Line
+	4150 1450 4200 1450
+Wire Wire Line
+	4150 1550 4200 1550
+Wire Wire Line
+	4150 1650 4200 1650
+Wire Wire Line
+	4150 1850 4200 1850
+Wire Wire Line
+	4150 1950 4200 1950
+Wire Wire Line
+	4150 2050 4200 2050
+Wire Wire Line
+	4150 2150 4200 2150
+Wire Wire Line
+	4150 2250 4200 2250
+Wire Wire Line
+	4150 2350 4200 2350
+Wire Wire Line
+	4150 2450 4200 2450
+Wire Wire Line
+	4150 2550 4200 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B334
+P 2950 2600
+AR Path="/5E00F069/5E83B334" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B334" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 2950 2350 50  0001 C CNN
+F 1 "GND" H 2955 2427 50  0000 C CNN
+F 2 "" H 2950 2600 50  0001 C CNN
+F 3 "" H 2950 2600 50  0001 C CNN
+	1    2950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B33A
+P 2800 2000
+AR Path="/5E00F069/5E83B33A" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B33A" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 2800 1850 50  0001 C CNN
+F 1 "+5V" H 2815 2173 50  0000 C CNN
+F 2 "" H 2800 2000 50  0001 C CNN
+F 3 "" H 2800 2000 50  0001 C CNN
+	1    2800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2400 2950 2450
+Wire Wire Line
+	2950 2550 3050 2550
+Connection ~ 2950 2550
+Wire Wire Line
+	2950 2550 2950 2600
+Wire Wire Line
+	3050 2450 2950 2450
+Connection ~ 2950 2450
+Wire Wire Line
+	2950 2450 2950 2550
+Wire Wire Line
+	2950 2100 2950 2050
+Wire Wire Line
+	2950 2050 3050 2050
+Connection ~ 2950 2050
+Wire Wire Line
+	2800 2000 2800 2050
+Wire Wire Line
+	2800 2050 2950 2050
+Wire Wire Line
+	3050 1550 2950 1550
+Wire Wire Line
+	2950 1550 2950 1650
+Wire Wire Line
+	2950 1950 2950 2050
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B34F
+P 3600 3950
+AR Path="/5E00F069/5E83B34F" Ref="U?"  Part="1" 
+AR Path="/5E83B34F" Ref="U7"  Part="1" 
+F 0 "U7" H 3600 4600 50  0000 C CNN
+F 1 "MAX7219_7221" H 3600 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 3600 2700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 3600 3950 50  0001 C CNN
+	1    3600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B355
+P 4500 4250
+AR Path="/5E00F069/5E83B355" Ref="LED?"  Part="1" 
+AR Path="/5E83B355" Ref="LED7"  Part="1" 
+F 0 "LED7" H 4500 5200 50  0000 C CNN
+F 1 "7088A_788" H 4500 3300 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 4500 3200 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 4600 4650 50  0001 C CNN
+	1    4500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B35B
+P 2950 4750
+AR Path="/5E00F069/5E83B35B" Ref="C?"  Part="1" 
+AR Path="/5E83B35B" Ref="C7"  Part="1" 
+F 0 "C7" H 3065 4796 50  0000 L CNN
+F 1 "0.1u" H 3065 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2988 4600 50  0001 C CNN
+F 3 "~" H 2950 4750 50  0001 C CNN
+	1    2950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B361
+P 2950 4300
+AR Path="/5E00F069/5E83B361" Ref="R?"  Part="1" 
+AR Path="/5E83B361" Ref="R7"  Part="1" 
+F 0 "R7" H 3020 4346 50  0000 L CNN
+F 1 "30k" H 3020 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2880 4300 50  0001 C CNN
+F 3 "~" H 2950 4300 50  0001 C CNN
+	1    2950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3450 4200 3450
+Wire Wire Line
+	4150 3550 4200 3550
+Wire Wire Line
+	4150 3650 4200 3650
+Wire Wire Line
+	4150 3750 4200 3750
+Wire Wire Line
+	4150 3850 4200 3850
+Wire Wire Line
+	4150 3950 4200 3950
+Wire Wire Line
+	4150 4050 4200 4050
+Wire Wire Line
+	4150 4150 4200 4150
+Wire Wire Line
+	4150 4350 4200 4350
+Wire Wire Line
+	4150 4450 4200 4450
+Wire Wire Line
+	4150 4550 4200 4550
+Wire Wire Line
+	4150 4650 4200 4650
+Wire Wire Line
+	4150 4750 4200 4750
+Wire Wire Line
+	4150 4850 4200 4850
+Wire Wire Line
+	4150 4950 4200 4950
+Wire Wire Line
+	4150 5050 4200 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B377
+P 2950 5100
+AR Path="/5E00F069/5E83B377" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B377" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 2950 4850 50  0001 C CNN
+F 1 "GND" H 2955 4927 50  0000 C CNN
+F 2 "" H 2950 5100 50  0001 C CNN
+F 3 "" H 2950 5100 50  0001 C CNN
+	1    2950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B37D
+P 2800 4500
+AR Path="/5E00F069/5E83B37D" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B37D" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 2800 4350 50  0001 C CNN
+F 1 "+5V" H 2815 4673 50  0000 C CNN
+F 2 "" H 2800 4500 50  0001 C CNN
+F 3 "" H 2800 4500 50  0001 C CNN
+	1    2800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4900 2950 4950
+Wire Wire Line
+	2950 5050 3050 5050
+Connection ~ 2950 5050
+Wire Wire Line
+	2950 5050 2950 5100
+Wire Wire Line
+	3050 4950 2950 4950
+Connection ~ 2950 4950
+Wire Wire Line
+	2950 4950 2950 5050
+Wire Wire Line
+	2950 4600 2950 4550
+Wire Wire Line
+	2950 4550 3050 4550
+Connection ~ 2950 4550
+Wire Wire Line
+	2800 4500 2800 4550
+Wire Wire Line
+	2800 4550 2950 4550
+Wire Wire Line
+	3050 4050 2950 4050
+Wire Wire Line
+	2950 4050 2950 4150
+Wire Wire Line
+	2950 4450 2950 4550
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B392
+P 5600 1450
+AR Path="/5E00F069/5E83B392" Ref="U?"  Part="1" 
+AR Path="/5E83B392" Ref="U3"  Part="1" 
+F 0 "U3" H 5600 2100 50  0000 C CNN
+F 1 "MAX7219_7221" H 5600 200 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 5600 200 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 5600 1450 50  0001 C CNN
+	1    5600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B398
+P 6500 1750
+AR Path="/5E00F069/5E83B398" Ref="LED?"  Part="1" 
+AR Path="/5E83B398" Ref="LED3"  Part="1" 
+F 0 "LED3" H 6500 2700 50  0000 C CNN
+F 1 "7088A_788" H 6500 800 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 6500 700 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 6600 2150 50  0001 C CNN
+	1    6500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B39E
+P 4950 2250
+AR Path="/5E00F069/5E83B39E" Ref="C?"  Part="1" 
+AR Path="/5E83B39E" Ref="C3"  Part="1" 
+F 0 "C3" H 5065 2296 50  0000 L CNN
+F 1 "0.1u" H 5065 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4988 2100 50  0001 C CNN
+F 3 "~" H 4950 2250 50  0001 C CNN
+	1    4950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B3A4
+P 4950 1800
+AR Path="/5E00F069/5E83B3A4" Ref="R?"  Part="1" 
+AR Path="/5E83B3A4" Ref="R3"  Part="1" 
+F 0 "R3" H 5020 1846 50  0000 L CNN
+F 1 "30k" H 5020 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4880 1800 50  0001 C CNN
+F 3 "~" H 4950 1800 50  0001 C CNN
+	1    4950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 950  6200 950 
+Wire Wire Line
+	6150 1050 6200 1050
+Wire Wire Line
+	6150 1150 6200 1150
+Wire Wire Line
+	6150 1250 6200 1250
+Wire Wire Line
+	6150 1350 6200 1350
+Wire Wire Line
+	6150 1450 6200 1450
+Wire Wire Line
+	6150 1550 6200 1550
+Wire Wire Line
+	6150 1650 6200 1650
+Wire Wire Line
+	6150 1850 6200 1850
+Wire Wire Line
+	6150 1950 6200 1950
+Wire Wire Line
+	6150 2050 6200 2050
+Wire Wire Line
+	6150 2150 6200 2150
+Wire Wire Line
+	6150 2250 6200 2250
+Wire Wire Line
+	6150 2350 6200 2350
+Wire Wire Line
+	6150 2450 6200 2450
+Wire Wire Line
+	6150 2550 6200 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B3BA
+P 4950 2600
+AR Path="/5E00F069/5E83B3BA" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B3BA" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 4950 2350 50  0001 C CNN
+F 1 "GND" H 4955 2427 50  0000 C CNN
+F 2 "" H 4950 2600 50  0001 C CNN
+F 3 "" H 4950 2600 50  0001 C CNN
+	1    4950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B3C0
+P 4800 2000
+AR Path="/5E00F069/5E83B3C0" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B3C0" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 4800 1850 50  0001 C CNN
+F 1 "+5V" H 4815 2173 50  0000 C CNN
+F 2 "" H 4800 2000 50  0001 C CNN
+F 3 "" H 4800 2000 50  0001 C CNN
+	1    4800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2400 4950 2450
+Wire Wire Line
+	4950 2550 5050 2550
+Connection ~ 4950 2550
+Wire Wire Line
+	4950 2550 4950 2600
+Wire Wire Line
+	5050 2450 4950 2450
+Connection ~ 4950 2450
+Wire Wire Line
+	4950 2450 4950 2550
+Wire Wire Line
+	4950 2100 4950 2050
+Wire Wire Line
+	4950 2050 5050 2050
+Connection ~ 4950 2050
+Wire Wire Line
+	4800 2000 4800 2050
+Wire Wire Line
+	4800 2050 4950 2050
+Wire Wire Line
+	5050 1550 4950 1550
+Wire Wire Line
+	4950 1550 4950 1650
+Wire Wire Line
+	4950 1950 4950 2050
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B3D5
+P 7600 1450
+AR Path="/5E00F069/5E83B3D5" Ref="U?"  Part="1" 
+AR Path="/5E83B3D5" Ref="U4"  Part="1" 
+F 0 "U4" H 7600 2100 50  0000 C CNN
+F 1 "MAX7219_7221" H 7600 200 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 7600 200 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 7600 1450 50  0001 C CNN
+	1    7600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B3DB
+P 8500 1750
+AR Path="/5E00F069/5E83B3DB" Ref="LED?"  Part="1" 
+AR Path="/5E83B3DB" Ref="LED4"  Part="1" 
+F 0 "LED4" H 8500 2700 50  0000 C CNN
+F 1 "7088A_788" H 8500 800 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 8500 700 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 8600 2150 50  0001 C CNN
+	1    8500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B3E1
+P 6950 2250
+AR Path="/5E00F069/5E83B3E1" Ref="C?"  Part="1" 
+AR Path="/5E83B3E1" Ref="C4"  Part="1" 
+F 0 "C4" H 7065 2296 50  0000 L CNN
+F 1 "0.1u" H 7065 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6988 2100 50  0001 C CNN
+F 3 "~" H 6950 2250 50  0001 C CNN
+	1    6950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B3E7
+P 6950 1800
+AR Path="/5E00F069/5E83B3E7" Ref="R?"  Part="1" 
+AR Path="/5E83B3E7" Ref="R4"  Part="1" 
+F 0 "R4" H 7020 1846 50  0000 L CNN
+F 1 "30k" H 7020 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6880 1800 50  0001 C CNN
+F 3 "~" H 6950 1800 50  0001 C CNN
+	1    6950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 950  8200 950 
+Wire Wire Line
+	8150 1050 8200 1050
+Wire Wire Line
+	8150 1150 8200 1150
+Wire Wire Line
+	8150 1250 8200 1250
+Wire Wire Line
+	8150 1350 8200 1350
+Wire Wire Line
+	8150 1450 8200 1450
+Wire Wire Line
+	8150 1550 8200 1550
+Wire Wire Line
+	8150 1650 8200 1650
+Wire Wire Line
+	8150 1850 8200 1850
+Wire Wire Line
+	8150 1950 8200 1950
+Wire Wire Line
+	8150 2050 8200 2050
+Wire Wire Line
+	8150 2150 8200 2150
+Wire Wire Line
+	8150 2250 8200 2250
+Wire Wire Line
+	8150 2350 8200 2350
+Wire Wire Line
+	8150 2450 8200 2450
+Wire Wire Line
+	8150 2550 8200 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B3FD
+P 6950 2600
+AR Path="/5E00F069/5E83B3FD" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B3FD" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 6950 2350 50  0001 C CNN
+F 1 "GND" H 6955 2427 50  0000 C CNN
+F 2 "" H 6950 2600 50  0001 C CNN
+F 3 "" H 6950 2600 50  0001 C CNN
+	1    6950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B403
+P 6800 2000
+AR Path="/5E00F069/5E83B403" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B403" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 6800 1850 50  0001 C CNN
+F 1 "+5V" H 6815 2173 50  0000 C CNN
+F 2 "" H 6800 2000 50  0001 C CNN
+F 3 "" H 6800 2000 50  0001 C CNN
+	1    6800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2400 6950 2450
+Wire Wire Line
+	6950 2550 7050 2550
+Connection ~ 6950 2550
+Wire Wire Line
+	6950 2550 6950 2600
+Wire Wire Line
+	7050 2450 6950 2450
+Connection ~ 6950 2450
+Wire Wire Line
+	6950 2450 6950 2550
+Wire Wire Line
+	6950 2100 6950 2050
+Wire Wire Line
+	6950 2050 7050 2050
+Connection ~ 6950 2050
+Wire Wire Line
+	6800 2000 6800 2050
+Wire Wire Line
+	6800 2050 6950 2050
+Wire Wire Line
+	7050 1550 6950 1550
+Wire Wire Line
+	6950 1550 6950 1650
+Wire Wire Line
+	6950 1950 6950 2050
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B418
+P 9600 1450
+AR Path="/5E00F069/5E83B418" Ref="U?"  Part="1" 
+AR Path="/5E83B418" Ref="U5"  Part="1" 
+F 0 "U5" H 9600 2100 50  0000 C CNN
+F 1 "MAX7219_7221" H 9600 200 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 9600 200 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 9600 1450 50  0001 C CNN
+	1    9600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B41E
+P 10500 1750
+AR Path="/5E00F069/5E83B41E" Ref="LED?"  Part="1" 
+AR Path="/5E83B41E" Ref="LED5"  Part="1" 
+F 0 "LED5" H 10500 2700 50  0000 C CNN
+F 1 "7088A_788" H 10500 800 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 10500 700 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 10600 2150 50  0001 C CNN
+	1    10500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B424
+P 8950 2250
+AR Path="/5E00F069/5E83B424" Ref="C?"  Part="1" 
+AR Path="/5E83B424" Ref="C5"  Part="1" 
+F 0 "C5" H 9065 2296 50  0000 L CNN
+F 1 "0.1u" H 9065 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8988 2100 50  0001 C CNN
+F 3 "~" H 8950 2250 50  0001 C CNN
+	1    8950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B42A
+P 8950 1800
+AR Path="/5E00F069/5E83B42A" Ref="R?"  Part="1" 
+AR Path="/5E83B42A" Ref="R5"  Part="1" 
+F 0 "R5" H 9020 1846 50  0000 L CNN
+F 1 "30k" H 9020 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8880 1800 50  0001 C CNN
+F 3 "~" H 8950 1800 50  0001 C CNN
+	1    8950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 950  10200 950 
+Wire Wire Line
+	10150 1050 10200 1050
+Wire Wire Line
+	10150 1150 10200 1150
+Wire Wire Line
+	10150 1250 10200 1250
+Wire Wire Line
+	10150 1350 10200 1350
+Wire Wire Line
+	10150 1450 10200 1450
+Wire Wire Line
+	10150 1550 10200 1550
+Wire Wire Line
+	10150 1650 10200 1650
+Wire Wire Line
+	10150 1850 10200 1850
+Wire Wire Line
+	10150 1950 10200 1950
+Wire Wire Line
+	10150 2050 10200 2050
+Wire Wire Line
+	10150 2150 10200 2150
+Wire Wire Line
+	10150 2250 10200 2250
+Wire Wire Line
+	10150 2350 10200 2350
+Wire Wire Line
+	10150 2450 10200 2450
+Wire Wire Line
+	10150 2550 10200 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B440
+P 8950 2600
+AR Path="/5E00F069/5E83B440" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B440" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 8950 2350 50  0001 C CNN
+F 1 "GND" H 8955 2427 50  0000 C CNN
+F 2 "" H 8950 2600 50  0001 C CNN
+F 3 "" H 8950 2600 50  0001 C CNN
+	1    8950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B446
+P 8800 2000
+AR Path="/5E00F069/5E83B446" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B446" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 8800 1850 50  0001 C CNN
+F 1 "+5V" H 8815 2173 50  0000 C CNN
+F 2 "" H 8800 2000 50  0001 C CNN
+F 3 "" H 8800 2000 50  0001 C CNN
+	1    8800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2400 8950 2450
+Wire Wire Line
+	8950 2550 9050 2550
+Connection ~ 8950 2550
+Wire Wire Line
+	8950 2550 8950 2600
+Wire Wire Line
+	9050 2450 8950 2450
+Connection ~ 8950 2450
+Wire Wire Line
+	8950 2450 8950 2550
+Wire Wire Line
+	8950 2100 8950 2050
+Wire Wire Line
+	8950 2050 9050 2050
+Connection ~ 8950 2050
+Wire Wire Line
+	8800 2000 8800 2050
+Wire Wire Line
+	8800 2050 8950 2050
+Wire Wire Line
+	9050 1550 8950 1550
+Wire Wire Line
+	8950 1550 8950 1650
+Wire Wire Line
+	8950 1950 8950 2050
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B45B
+P 5600 3950
+AR Path="/5E00F069/5E83B45B" Ref="U?"  Part="1" 
+AR Path="/5E83B45B" Ref="U8"  Part="1" 
+F 0 "U8" H 5600 4600 50  0000 C CNN
+F 1 "MAX7219_7221" H 5600 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 5600 2700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 5600 3950 50  0001 C CNN
+	1    5600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B461
+P 6500 4250
+AR Path="/5E00F069/5E83B461" Ref="LED?"  Part="1" 
+AR Path="/5E83B461" Ref="LED8"  Part="1" 
+F 0 "LED8" H 6500 5200 50  0000 C CNN
+F 1 "7088A_788" H 6500 3300 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 6500 3200 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 6600 4650 50  0001 C CNN
+	1    6500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B467
+P 4950 4750
+AR Path="/5E00F069/5E83B467" Ref="C?"  Part="1" 
+AR Path="/5E83B467" Ref="C8"  Part="1" 
+F 0 "C8" H 5065 4796 50  0000 L CNN
+F 1 "0.1u" H 5065 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4988 4600 50  0001 C CNN
+F 3 "~" H 4950 4750 50  0001 C CNN
+	1    4950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B46D
+P 4950 4300
+AR Path="/5E00F069/5E83B46D" Ref="R?"  Part="1" 
+AR Path="/5E83B46D" Ref="R8"  Part="1" 
+F 0 "R8" H 5020 4346 50  0000 L CNN
+F 1 "30k" H 5020 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4880 4300 50  0001 C CNN
+F 3 "~" H 4950 4300 50  0001 C CNN
+	1    4950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3450 6200 3450
+Wire Wire Line
+	6150 3550 6200 3550
+Wire Wire Line
+	6150 3650 6200 3650
+Wire Wire Line
+	6150 3750 6200 3750
+Wire Wire Line
+	6150 3850 6200 3850
+Wire Wire Line
+	6150 3950 6200 3950
+Wire Wire Line
+	6150 4050 6200 4050
+Wire Wire Line
+	6150 4150 6200 4150
+Wire Wire Line
+	6150 4350 6200 4350
+Wire Wire Line
+	6150 4450 6200 4450
+Wire Wire Line
+	6150 4550 6200 4550
+Wire Wire Line
+	6150 4650 6200 4650
+Wire Wire Line
+	6150 4750 6200 4750
+Wire Wire Line
+	6150 4850 6200 4850
+Wire Wire Line
+	6150 4950 6200 4950
+Wire Wire Line
+	6150 5050 6200 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B483
+P 4950 5100
+AR Path="/5E00F069/5E83B483" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B483" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 4950 4850 50  0001 C CNN
+F 1 "GND" H 4955 4927 50  0000 C CNN
+F 2 "" H 4950 5100 50  0001 C CNN
+F 3 "" H 4950 5100 50  0001 C CNN
+	1    4950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B489
+P 4800 4500
+AR Path="/5E00F069/5E83B489" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B489" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 4800 4350 50  0001 C CNN
+F 1 "+5V" H 4815 4673 50  0000 C CNN
+F 2 "" H 4800 4500 50  0001 C CNN
+F 3 "" H 4800 4500 50  0001 C CNN
+	1    4800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4900 4950 4950
+Wire Wire Line
+	4950 5050 5050 5050
+Connection ~ 4950 5050
+Wire Wire Line
+	4950 5050 4950 5100
+Wire Wire Line
+	5050 4950 4950 4950
+Connection ~ 4950 4950
+Wire Wire Line
+	4950 4950 4950 5050
+Wire Wire Line
+	4950 4600 4950 4550
+Wire Wire Line
+	4950 4550 5050 4550
+Connection ~ 4950 4550
+Wire Wire Line
+	4800 4500 4800 4550
+Wire Wire Line
+	4800 4550 4950 4550
+Wire Wire Line
+	5050 4050 4950 4050
+Wire Wire Line
+	4950 4050 4950 4150
+Wire Wire Line
+	4950 4450 4950 4550
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B49E
+P 7600 3950
+AR Path="/5E00F069/5E83B49E" Ref="U?"  Part="1" 
+AR Path="/5E83B49E" Ref="U9"  Part="1" 
+F 0 "U9" H 7600 4600 50  0000 C CNN
+F 1 "MAX7219_7221" H 7600 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 7600 2700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 7600 3950 50  0001 C CNN
+	1    7600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B4A4
+P 8500 4250
+AR Path="/5E00F069/5E83B4A4" Ref="LED?"  Part="1" 
+AR Path="/5E83B4A4" Ref="LED9"  Part="1" 
+F 0 "LED9" H 8500 5200 50  0000 C CNN
+F 1 "7088A_788" H 8500 3300 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 8500 3200 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 8600 4650 50  0001 C CNN
+	1    8500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B4AA
+P 6950 4750
+AR Path="/5E00F069/5E83B4AA" Ref="C?"  Part="1" 
+AR Path="/5E83B4AA" Ref="C9"  Part="1" 
+F 0 "C9" H 7065 4796 50  0000 L CNN
+F 1 "0.1u" H 7065 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6988 4600 50  0001 C CNN
+F 3 "~" H 6950 4750 50  0001 C CNN
+	1    6950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B4B0
+P 6950 4300
+AR Path="/5E00F069/5E83B4B0" Ref="R?"  Part="1" 
+AR Path="/5E83B4B0" Ref="R9"  Part="1" 
+F 0 "R9" H 7020 4346 50  0000 L CNN
+F 1 "30k" H 7020 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6880 4300 50  0001 C CNN
+F 3 "~" H 6950 4300 50  0001 C CNN
+	1    6950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3450 8200 3450
+Wire Wire Line
+	8150 3550 8200 3550
+Wire Wire Line
+	8150 3650 8200 3650
+Wire Wire Line
+	8150 3750 8200 3750
+Wire Wire Line
+	8150 3850 8200 3850
+Wire Wire Line
+	8150 3950 8200 3950
+Wire Wire Line
+	8150 4050 8200 4050
+Wire Wire Line
+	8150 4150 8200 4150
+Wire Wire Line
+	8150 4350 8200 4350
+Wire Wire Line
+	8150 4450 8200 4450
+Wire Wire Line
+	8150 4550 8200 4550
+Wire Wire Line
+	8150 4650 8200 4650
+Wire Wire Line
+	8150 4750 8200 4750
+Wire Wire Line
+	8150 4850 8200 4850
+Wire Wire Line
+	8150 4950 8200 4950
+Wire Wire Line
+	8150 5050 8200 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B4C6
+P 6950 5100
+AR Path="/5E00F069/5E83B4C6" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B4C6" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 6950 4850 50  0001 C CNN
+F 1 "GND" H 6955 4927 50  0000 C CNN
+F 2 "" H 6950 5100 50  0001 C CNN
+F 3 "" H 6950 5100 50  0001 C CNN
+	1    6950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B4CC
+P 6800 4500
+AR Path="/5E00F069/5E83B4CC" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B4CC" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 6800 4350 50  0001 C CNN
+F 1 "+5V" H 6815 4673 50  0000 C CNN
+F 2 "" H 6800 4500 50  0001 C CNN
+F 3 "" H 6800 4500 50  0001 C CNN
+	1    6800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4900 6950 4950
+Wire Wire Line
+	6950 5050 7050 5050
+Connection ~ 6950 5050
+Wire Wire Line
+	6950 5050 6950 5100
+Wire Wire Line
+	7050 4950 6950 4950
+Connection ~ 6950 4950
+Wire Wire Line
+	6950 4950 6950 5050
+Wire Wire Line
+	6950 4600 6950 4550
+Wire Wire Line
+	6950 4550 7050 4550
+Connection ~ 6950 4550
+Wire Wire Line
+	6800 4500 6800 4550
+Wire Wire Line
+	6800 4550 6950 4550
+Wire Wire Line
+	7050 4050 6950 4050
+Wire Wire Line
+	6950 4050 6950 4150
+Wire Wire Line
+	6950 4450 6950 4550
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B4E1
+P 9600 3950
+AR Path="/5E00F069/5E83B4E1" Ref="U?"  Part="1" 
+AR Path="/5E83B4E1" Ref="U10"  Part="1" 
+F 0 "U10" H 9600 4600 50  0000 C CNN
+F 1 "MAX7219_7221" H 9600 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 9600 2700 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 9600 3950 50  0001 C CNN
+	1    9600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B4E7
+P 10500 4250
+AR Path="/5E00F069/5E83B4E7" Ref="LED?"  Part="1" 
+AR Path="/5E83B4E7" Ref="LED10"  Part="1" 
+F 0 "LED10" H 10500 5200 50  0000 C CNN
+F 1 "7088A_788" H 10500 3300 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 10500 3200 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 10600 4650 50  0001 C CNN
+	1    10500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B4ED
+P 8950 4750
+AR Path="/5E00F069/5E83B4ED" Ref="C?"  Part="1" 
+AR Path="/5E83B4ED" Ref="C10"  Part="1" 
+F 0 "C10" H 9065 4796 50  0000 L CNN
+F 1 "0.1u" H 9065 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8988 4600 50  0001 C CNN
+F 3 "~" H 8950 4750 50  0001 C CNN
+	1    8950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B4F3
+P 8950 4300
+AR Path="/5E00F069/5E83B4F3" Ref="R?"  Part="1" 
+AR Path="/5E83B4F3" Ref="R10"  Part="1" 
+F 0 "R10" H 9020 4346 50  0000 L CNN
+F 1 "30k" H 9020 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8880 4300 50  0001 C CNN
+F 3 "~" H 8950 4300 50  0001 C CNN
+	1    8950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3450 10200 3450
+Wire Wire Line
+	10150 3550 10200 3550
+Wire Wire Line
+	10150 3650 10200 3650
+Wire Wire Line
+	10150 3750 10200 3750
+Wire Wire Line
+	10150 3850 10200 3850
+Wire Wire Line
+	10150 3950 10200 3950
+Wire Wire Line
+	10150 4050 10200 4050
+Wire Wire Line
+	10150 4150 10200 4150
+Wire Wire Line
+	10150 4350 10200 4350
+Wire Wire Line
+	10150 4450 10200 4450
+Wire Wire Line
+	10150 4550 10200 4550
+Wire Wire Line
+	10150 4650 10200 4650
+Wire Wire Line
+	10150 4750 10200 4750
+Wire Wire Line
+	10150 4850 10200 4850
+Wire Wire Line
+	10150 4950 10200 4950
+Wire Wire Line
+	10150 5050 10200 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B509
+P 8950 5100
+AR Path="/5E00F069/5E83B509" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B509" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 8950 4850 50  0001 C CNN
+F 1 "GND" H 8955 4927 50  0000 C CNN
+F 2 "" H 8950 5100 50  0001 C CNN
+F 3 "" H 8950 5100 50  0001 C CNN
+	1    8950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B50F
+P 8800 4500
+AR Path="/5E00F069/5E83B50F" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B50F" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 8800 4350 50  0001 C CNN
+F 1 "+5V" H 8815 4673 50  0000 C CNN
+F 2 "" H 8800 4500 50  0001 C CNN
+F 3 "" H 8800 4500 50  0001 C CNN
+	1    8800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4900 8950 4950
+Wire Wire Line
+	8950 5050 9050 5050
+Connection ~ 8950 5050
+Wire Wire Line
+	8950 5050 8950 5100
+Wire Wire Line
+	9050 4950 8950 4950
+Connection ~ 8950 4950
+Wire Wire Line
+	8950 4950 8950 5050
+Wire Wire Line
+	8950 4600 8950 4550
+Wire Wire Line
+	8950 4550 9050 4550
+Connection ~ 8950 4550
+Wire Wire Line
+	8800 4500 8800 4550
+Wire Wire Line
+	8800 4550 8950 4550
+Wire Wire Line
+	9050 4050 8950 4050
+Wire Wire Line
+	8950 4050 8950 4150
+Wire Wire Line
+	8950 4450 8950 4550
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B524
+P 1600 6200
+AR Path="/5E00F069/5E83B524" Ref="U?"  Part="1" 
+AR Path="/5E83B524" Ref="U11"  Part="1" 
+F 0 "U11" H 1600 6850 50  0000 C CNN
+F 1 "MAX7219_7221" H 1600 4950 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 1600 4950 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 1600 6200 50  0001 C CNN
+	1    1600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B52A
+P 2500 6500
+AR Path="/5E00F069/5E83B52A" Ref="LED?"  Part="1" 
+AR Path="/5E83B52A" Ref="LED11"  Part="1" 
+F 0 "LED11" H 2500 7450 50  0000 C CNN
+F 1 "7088A_788" H 2500 5550 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 2500 5450 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 2600 6900 50  0001 C CNN
+	1    2500 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B530
+P 950 7000
+AR Path="/5E00F069/5E83B530" Ref="C?"  Part="1" 
+AR Path="/5E83B530" Ref="C11"  Part="1" 
+F 0 "C11" H 1065 7046 50  0000 L CNN
+F 1 "0.1u" H 1065 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 988 6850 50  0001 C CNN
+F 3 "~" H 950 7000 50  0001 C CNN
+	1    950  7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B536
+P 950 6550
+AR Path="/5E00F069/5E83B536" Ref="R?"  Part="1" 
+AR Path="/5E83B536" Ref="R14"  Part="1" 
+F 0 "R14" H 1020 6596 50  0000 L CNN
+F 1 "30k" H 1020 6505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 880 6550 50  0001 C CNN
+F 3 "~" H 950 6550 50  0001 C CNN
+	1    950  6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5700 2200 5700
+Wire Wire Line
+	2150 5800 2200 5800
+Wire Wire Line
+	2150 5900 2200 5900
+Wire Wire Line
+	2150 6000 2200 6000
+Wire Wire Line
+	2150 6100 2200 6100
+Wire Wire Line
+	2150 6200 2200 6200
+Wire Wire Line
+	2150 6300 2200 6300
+Wire Wire Line
+	2150 6400 2200 6400
+Wire Wire Line
+	2150 6600 2200 6600
+Wire Wire Line
+	2150 6700 2200 6700
+Wire Wire Line
+	2150 6800 2200 6800
+Wire Wire Line
+	2150 6900 2200 6900
+Wire Wire Line
+	2150 7000 2200 7000
+Wire Wire Line
+	2150 7100 2200 7100
+Wire Wire Line
+	2150 7200 2200 7200
+Wire Wire Line
+	2150 7300 2200 7300
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B54C
+P 950 7350
+AR Path="/5E00F069/5E83B54C" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B54C" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 950 7100 50  0001 C CNN
+F 1 "GND" H 955 7177 50  0000 C CNN
+F 2 "" H 950 7350 50  0001 C CNN
+F 3 "" H 950 7350 50  0001 C CNN
+	1    950  7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B552
+P 800 6750
+AR Path="/5E00F069/5E83B552" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B552" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 800 6600 50  0001 C CNN
+F 1 "+5V" H 815 6923 50  0000 C CNN
+F 2 "" H 800 6750 50  0001 C CNN
+F 3 "" H 800 6750 50  0001 C CNN
+	1    800  6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  7150 950  7200
+Wire Wire Line
+	950  7300 1050 7300
+Connection ~ 950  7300
+Wire Wire Line
+	950  7300 950  7350
+Wire Wire Line
+	1050 7200 950  7200
+Connection ~ 950  7200
+Wire Wire Line
+	950  7200 950  7300
+Wire Wire Line
+	950  6850 950  6800
+Wire Wire Line
+	950  6800 1050 6800
+Connection ~ 950  6800
+Wire Wire Line
+	800  6750 800  6800
+Wire Wire Line
+	800  6800 950  6800
+Wire Wire Line
+	1050 6300 950  6300
+Wire Wire Line
+	950  6300 950  6400
+Wire Wire Line
+	950  6700 950  6800
+$Comp
+L led_matrix:MAX7219_7221_alt U?
+U 1 1 5E83B567
+P 4250 6200
+AR Path="/5E00F069/5E83B567" Ref="U?"  Part="1" 
+AR Path="/5E83B567" Ref="U12"  Part="1" 
+F 0 "U12" H 4250 6850 50  0000 C CNN
+F 1 "MAX7219_7221" H 4250 4950 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 4250 4950 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 4250 6200 50  0001 C CNN
+	1    4250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_matrix:7088A_788_alt LED?
+U 1 1 5E83B56D
+P 5150 6500
+AR Path="/5E00F069/5E83B56D" Ref="LED?"  Part="1" 
+AR Path="/5E83B56D" Ref="LED12"  Part="1" 
+F 0 "LED12" H 5150 7450 50  0000 C CNN
+F 1 "7088A_788" H 5150 5550 50  0000 C CNN
+F 2 "led_matrix:7088A_788" H 5150 5450 50  0001 C CNN
+F 3 "http://www.aitendo.com/product/16897" H 5250 6900 50  0001 C CNN
+	1    5150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E83B573
+P 3600 7000
+AR Path="/5E00F069/5E83B573" Ref="C?"  Part="1" 
+AR Path="/5E83B573" Ref="C12"  Part="1" 
+F 0 "C12" H 3715 7046 50  0000 L CNN
+F 1 "0.1u" H 3715 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 6850 50  0001 C CNN
+F 3 "~" H 3600 7000 50  0001 C CNN
+	1    3600 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E83B579
+P 3600 6550
+AR Path="/5E00F069/5E83B579" Ref="R?"  Part="1" 
+AR Path="/5E83B579" Ref="R15"  Part="1" 
+F 0 "R15" H 3670 6596 50  0000 L CNN
+F 1 "30k" H 3670 6505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3530 6550 50  0001 C CNN
+F 3 "~" H 3600 6550 50  0001 C CNN
+	1    3600 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5700 4850 5700
+Wire Wire Line
+	4800 5800 4850 5800
+Wire Wire Line
+	4800 5900 4850 5900
+Wire Wire Line
+	4800 6000 4850 6000
+Wire Wire Line
+	4800 6100 4850 6100
+Wire Wire Line
+	4800 6200 4850 6200
+Wire Wire Line
+	4800 6300 4850 6300
+Wire Wire Line
+	4800 6400 4850 6400
+Wire Wire Line
+	4800 6600 4850 6600
+Wire Wire Line
+	4800 6700 4850 6700
+Wire Wire Line
+	4800 6800 4850 6800
+Wire Wire Line
+	4800 6900 4850 6900
+Wire Wire Line
+	4800 7000 4850 7000
+Wire Wire Line
+	4800 7100 4850 7100
+Wire Wire Line
+	4800 7200 4850 7200
+Wire Wire Line
+	4800 7300 4850 7300
+$Comp
+L power:GND #PWR?
+U 1 1 5E83B58F
+P 3600 7350
+AR Path="/5E00F069/5E83B58F" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B58F" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 3600 7100 50  0001 C CNN
+F 1 "GND" H 3605 7177 50  0000 C CNN
+F 2 "" H 3600 7350 50  0001 C CNN
+F 3 "" H 3600 7350 50  0001 C CNN
+	1    3600 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E83B595
+P 3450 6750
+AR Path="/5E00F069/5E83B595" Ref="#PWR?"  Part="1" 
+AR Path="/5E83B595" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 3450 6600 50  0001 C CNN
+F 1 "+5V" H 3465 6923 50  0000 C CNN
+F 2 "" H 3450 6750 50  0001 C CNN
+F 3 "" H 3450 6750 50  0001 C CNN
+	1    3450 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 7150 3600 7200
+Wire Wire Line
+	3600 7300 3700 7300
+Connection ~ 3600 7300
+Wire Wire Line
+	3600 7300 3600 7350
+Wire Wire Line
+	3700 7200 3600 7200
+Connection ~ 3600 7200
+Wire Wire Line
+	3600 7200 3600 7300
+Wire Wire Line
+	3600 6850 3600 6800
+Wire Wire Line
+	3600 6800 3700 6800
+Connection ~ 3600 6800
+Wire Wire Line
+	3450 6750 3450 6800
+Wire Wire Line
+	3450 6800 3600 6800
+Wire Wire Line
+	3700 6300 3600 6300
+Wire Wire Line
+	3600 6300 3600 6400
+Wire Wire Line
+	3600 6700 3600 6800
+Wire Wire Line
+	1050 950  1000 950 
+Wire Wire Line
+	1000 950  1000 700 
+Wire Wire Line
+	1000 700  2850 700 
+Wire Wire Line
+	2850 700  2850 1050
+Wire Wire Line
+	2850 1050 3050 1050
+Wire Wire Line
+	3050 950  2950 950 
+Wire Wire Line
+	2950 950  2950 700 
+Wire Wire Line
+	2950 700  4850 700 
+Wire Wire Line
+	4850 700  4850 1050
+Wire Wire Line
+	4850 1050 5050 1050
+Wire Wire Line
+	5050 950  4950 950 
+Wire Wire Line
+	4950 950  4950 700 
+Wire Wire Line
+	4950 700  6850 700 
+Wire Wire Line
+	6850 700  6850 1050
+Wire Wire Line
+	6850 1050 7050 1050
+Wire Wire Line
+	7050 950  6950 950 
+Wire Wire Line
+	6950 950  6950 700 
+Wire Wire Line
+	6950 700  8850 700 
+Wire Wire Line
+	8850 700  8850 1050
+Wire Wire Line
+	8850 1050 9050 1050
+Wire Wire Line
+	950  3450 950  3200
+Wire Wire Line
+	950  3200 2850 3200
+Wire Wire Line
+	2850 3200 2850 3550
+Wire Wire Line
+	2850 3550 3050 3550
+Wire Wire Line
+	950  3450 1050 3450
+Wire Wire Line
+	3050 3450 2950 3450
+Wire Wire Line
+	2950 3450 2950 3200
+Wire Wire Line
+	2950 3200 4850 3200
+Wire Wire Line
+	4850 3200 4850 3550
+Wire Wire Line
+	4850 3550 5050 3550
+Wire Wire Line
+	5050 3450 4950 3450
+Wire Wire Line
+	4950 3450 4950 3200
+Wire Wire Line
+	4950 3200 6850 3200
+Wire Wire Line
+	6850 3200 6850 3550
+Wire Wire Line
+	6850 3550 7050 3550
+Wire Wire Line
+	7050 3450 6950 3450
+Wire Wire Line
+	6950 3450 6950 3200
+Wire Wire Line
+	6950 3200 8850 3200
+Wire Wire Line
+	8850 3200 8850 3550
+Wire Wire Line
+	8850 3550 9050 3550
+Text Label 800  5800 0    50   ~ 0
+R0D
+Wire Wire Line
+	3700 5800 3500 5800
+Text Label 3500 5800 0    50   ~ 0
+R1D
+Text Label 8900 950  0    50   ~ 0
+R0D
+Wire Wire Line
+	8900 950  9050 950 
+Text Label 8900 3450 0    50   ~ 0
+R1D
+Wire Wire Line
+	8900 3450 9050 3450
+Text Label 800  5700 0    50   ~ 0
+DOUT0
+Wire Wire Line
+	800  5700 1050 5700
+Wire Wire Line
+	800  5800 1050 5800
+Text Label 8600 5700 0    50   ~ 0
+DOUT0
+Text Label 9500 5700 2    50   ~ 0
+DIN1
+Wire Wire Line
+	8600 5700 8900 5700
+$Comp
+L Device:R R?
+U 1 1 5ECF3CE3
+P 9050 5700
+AR Path="/5E00F069/5ECF3CE3" Ref="R?"  Part="1" 
+AR Path="/5ECF3CE3" Ref="R11"  Part="1" 
+F 0 "R11" V 8950 5600 50  0000 C CNN
+F 1 "0R" V 8950 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8980 5700 50  0001 C CNN
+F 3 "~" H 9050 5700 50  0001 C CNN
+	1    9050 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ECF46B7
+P 9050 6000
+AR Path="/5E00F069/5ECF46B7" Ref="R?"  Part="1" 
+AR Path="/5ECF46B7" Ref="R12"  Part="1" 
+F 0 "R12" V 8950 5900 50  0000 C CNN
+F 1 "0R" V 8950 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8980 6000 50  0001 C CNN
+F 3 "~" H 9050 6000 50  0001 C CNN
+	1    9050 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED2DC43
+P 9050 6300
+AR Path="/5E00F069/5ED2DC43" Ref="R?"  Part="1" 
+AR Path="/5ED2DC43" Ref="R13"  Part="1" 
+F 0 "R13" V 8950 6200 50  0000 C CNN
+F 1 "0R" V 8950 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8980 6300 50  0001 C CNN
+F 3 "~" H 9050 6300 50  0001 C CNN
+	1    9050 6300
+	0    1    1    0   
+$EndComp
+Text Label 8600 6000 0    50   ~ 0
+CLK0
+Text Label 9500 6000 2    50   ~ 0
+CLK1
+Wire Wire Line
+	9200 5700 9500 5700
+Text Label 8600 6300 0    50   ~ 0
+CS0
+Text Label 9500 6300 2    50   ~ 0
+CS1
+Wire Wire Line
+	8600 6000 8900 6000
+Wire Wire Line
+	8900 6300 8600 6300
+Wire Wire Line
+	9200 6300 9500 6300
+Wire Wire Line
+	9500 6000 9200 6000
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5EE860FD
+P 7700 6100
+F 0 "J1" H 7750 6425 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 7750 6426 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7700 6100 50  0001 C CNN
+F 3 "~" H 7700 6100 50  0001 C CNN
+	1    7700 6100
+	1    0    0    -1  
+$EndComp
+Text Label 7300 6100 0    50   ~ 0
+DIN0
+Text Label 7300 6200 0    50   ~ 0
+CLK0
+Text Label 7300 6300 0    50   ~ 0
+CS0
+Text Label 8200 6300 2    50   ~ 0
+CS1
+Text Label 8200 6200 2    50   ~ 0
+CLK1
+Text Label 8200 6100 2    50   ~ 0
+DIN1
+$Comp
+L power:GND #PWR?
+U 1 1 5EFE5DCD
+P 8200 6000
+AR Path="/5E00F069/5EFE5DCD" Ref="#PWR?"  Part="1" 
+AR Path="/5EFE5DCD" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 8200 5750 50  0001 C CNN
+F 1 "GND" V 8205 5872 50  0000 R CNN
+F 2 "" H 8200 6000 50  0001 C CNN
+F 3 "" H 8200 6000 50  0001 C CNN
+	1    8200 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EFE62C7
+P 7300 6000
+AR Path="/5E00F069/5EFE62C7" Ref="#PWR?"  Part="1" 
+AR Path="/5EFE62C7" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 7300 5750 50  0001 C CNN
+F 1 "GND" V 7305 5872 50  0000 R CNN
+F 2 "" H 7300 6000 50  0001 C CNN
+F 3 "" H 7300 6000 50  0001 C CNN
+	1    7300 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F05F29F
+P 7300 5850
+AR Path="/5E00F069/5F05F29F" Ref="#PWR?"  Part="1" 
+AR Path="/5F05F29F" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 7300 5700 50  0001 C CNN
+F 1 "+5V" H 7315 6023 50  0000 C CNN
+F 2 "" H 7300 5850 50  0001 C CNN
+F 3 "" H 7300 5850 50  0001 C CNN
+	1    7300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F05F86F
+P 8200 5850
+AR Path="/5E00F069/5F05F86F" Ref="#PWR?"  Part="1" 
+AR Path="/5F05F86F" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 8200 5700 50  0001 C CNN
+F 1 "+5V" H 8215 6023 50  0000 C CNN
+F 2 "" H 8200 5850 50  0001 C CNN
+F 3 "" H 8200 5850 50  0001 C CNN
+	1    8200 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 6100 7500 6100
+Wire Wire Line
+	7300 6200 7500 6200
+Wire Wire Line
+	7300 6300 7500 6300
+Wire Wire Line
+	7300 6000 7500 6000
+Wire Wire Line
+	7300 5850 7300 5900
+Wire Wire Line
+	7300 5900 7500 5900
+Wire Wire Line
+	8200 6100 8000 6100
+Wire Wire Line
+	8200 6200 8000 6200
+Wire Wire Line
+	8200 6300 8000 6300
+Wire Wire Line
+	8000 6000 8200 6000
+Wire Wire Line
+	8000 5900 8200 5900
+Wire Wire Line
+	8200 5900 8200 5850
+$Comp
+L power:+5V #PWR?
+U 1 1 5F469485
+P 10050 5800
+AR Path="/5E00F069/5F469485" Ref="#PWR?"  Part="1" 
+AR Path="/5F469485" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 10050 5650 50  0001 C CNN
+F 1 "+5V" H 10065 5973 50  0000 C CNN
+F 2 "" H 10050 5800 50  0001 C CNN
+F 3 "" H 10050 5800 50  0001 C CNN
+	1    10050 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F46A085
+P 10400 5800
+F 0 "#FLG0101" H 10400 5875 50  0001 C CNN
+F 1 "PWR_FLAG" H 10400 5973 50  0000 C CNN
+F 2 "" H 10400 5800 50  0001 C CNN
+F 3 "~" H 10400 5800 50  0001 C CNN
+	1    10400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F46A6D2
+P 10050 5850
+F 0 "#FLG0102" H 10050 5925 50  0001 C CNN
+F 1 "PWR_FLAG" H 10050 6023 50  0000 C CNN
+F 2 "" H 10050 5850 50  0001 C CNN
+F 3 "~" H 10050 5850 50  0001 C CNN
+	1    10050 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F46AC1D
+P 10400 5850
+AR Path="/5E00F069/5F46AC1D" Ref="#PWR?"  Part="1" 
+AR Path="/5F46AC1D" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 10400 5600 50  0001 C CNN
+F 1 "GND" H 10405 5677 50  0000 C CNN
+F 2 "" H 10400 5850 50  0001 C CNN
+F 3 "" H 10400 5850 50  0001 C CNN
+	1    10400 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 5800 10400 5850
+Wire Wire Line
+	10050 5800 10050 5850
+Text Label 850  3550 0    50   ~ 0
+DIN1
+Text Label 850  3650 0    50   ~ 0
+CLK1
+Text Label 850  3750 0    50   ~ 0
+CS1
+Wire Wire Line
+	850  3750 1050 3750
+Wire Wire Line
+	850  3650 1050 3650
+Wire Wire Line
+	850  3550 1050 3550
+Text Label 2850 3650 0    50   ~ 0
+CLK1
+Text Label 2850 3750 0    50   ~ 0
+CS1
+Wire Wire Line
+	2850 3750 3050 3750
+Wire Wire Line
+	2850 3650 3050 3650
+Text Label 4850 3650 0    50   ~ 0
+CLK1
+Text Label 4850 3750 0    50   ~ 0
+CS1
+Wire Wire Line
+	4850 3750 5050 3750
+Wire Wire Line
+	4850 3650 5050 3650
+Text Label 6850 3650 0    50   ~ 0
+CLK1
+Text Label 6850 3750 0    50   ~ 0
+CS1
+Wire Wire Line
+	6850 3750 7050 3750
+Wire Wire Line
+	6850 3650 7050 3650
+Text Label 8850 3650 0    50   ~ 0
+CLK1
+Text Label 8850 3750 0    50   ~ 0
+CS1
+Wire Wire Line
+	8850 3750 9050 3750
+Wire Wire Line
+	8850 3650 9050 3650
+Text Label 850  1150 0    50   ~ 0
+CLK0
+Text Label 850  1250 0    50   ~ 0
+CS0
+Wire Wire Line
+	850  1250 1050 1250
+Wire Wire Line
+	850  1150 1050 1150
+Text Label 850  1050 0    50   ~ 0
+DIN0
+Wire Wire Line
+	850  1050 1050 1050
+Text Label 2850 1150 0    50   ~ 0
+CLK0
+Text Label 2850 1250 0    50   ~ 0
+CS0
+Wire Wire Line
+	2850 1250 3050 1250
+Wire Wire Line
+	2850 1150 3050 1150
+Text Label 4850 1150 0    50   ~ 0
+CLK0
+Text Label 4850 1250 0    50   ~ 0
+CS0
+Wire Wire Line
+	4850 1250 5050 1250
+Wire Wire Line
+	4850 1150 5050 1150
+Text Label 6850 1150 0    50   ~ 0
+CLK0
+Text Label 6850 1250 0    50   ~ 0
+CS0
+Wire Wire Line
+	6850 1250 7050 1250
+Wire Wire Line
+	6850 1150 7050 1150
+Text Label 8850 1150 0    50   ~ 0
+CLK0
+Text Label 8850 1250 0    50   ~ 0
+CS0
+Wire Wire Line
+	8850 1250 9050 1250
+Wire Wire Line
+	8850 1150 9050 1150
+Text Label 850  5900 0    50   ~ 0
+CLK0
+Text Label 850  6000 0    50   ~ 0
+CS0
+Wire Wire Line
+	850  6000 1050 6000
+Wire Wire Line
+	850  5900 1050 5900
+Text Label 3500 5900 0    50   ~ 0
+CLK1
+Text Label 3500 6000 0    50   ~ 0
+CS1
+Wire Wire Line
+	3500 6000 3700 6000
+Wire Wire Line
+	3500 5900 3700 5900
+NoConn ~ 3700 5700
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FB09AEC
+P 5850 6050
+F 0 "H1" H 5850 6250 50  0000 C CNN
+F 1 "MountingHole_Pad" H 5950 6008 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5850 6050 50  0001 C CNN
+F 3 "~" H 5850 6050 50  0001 C CNN
+	1    5850 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FB0B96F
+P 6050 6050
+F 0 "H2" H 6050 6250 50  0000 C CNN
+F 1 "MountingHole_Pad" H 6150 6008 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6050 6050 50  0001 C CNN
+F 3 "~" H 6050 6050 50  0001 C CNN
+	1    6050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5FB0BB53
+P 6250 6050
+F 0 "H3" H 6250 6250 50  0000 C CNN
+F 1 "MountingHole_Pad" H 6350 6008 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6250 6050 50  0001 C CNN
+F 3 "~" H 6250 6050 50  0001 C CNN
+	1    6250 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5FB0BDDC
+P 6450 6050
+F 0 "H4" H 6450 6250 50  0000 C CNN
+F 1 "MountingHole_Pad" H 6550 6008 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6450 6050 50  0001 C CNN
+F 3 "~" H 6450 6050 50  0001 C CNN
+	1    6450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB0C0F7
+P 6150 6250
+AR Path="/5E00F069/5FB0C0F7" Ref="#PWR?"  Part="1" 
+AR Path="/5FB0C0F7" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 6150 6000 50  0001 C CNN
+F 1 "GND" H 6155 6077 50  0000 C CNN
+F 2 "" H 6150 6250 50  0001 C CNN
+F 3 "" H 6150 6250 50  0001 C CNN
+	1    6150 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 6150 5850 6200
+Wire Wire Line
+	5850 6200 6050 6200
+Wire Wire Line
+	6450 6200 6450 6150
+Wire Wire Line
+	6250 6150 6250 6200
+Connection ~ 6250 6200
+Wire Wire Line
+	6250 6200 6450 6200
+Wire Wire Line
+	6050 6150 6050 6200
+Connection ~ 6050 6200
+Wire Wire Line
+	6050 6200 6150 6200
+Wire Wire Line
+	6150 6200 6150 6250
+Connection ~ 6150 6200
+Wire Wire Line
+	6150 6200 6250 6200
+$EndSCHEMATC
